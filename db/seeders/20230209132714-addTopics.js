@@ -5,7 +5,7 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await Topic.bulkCreate([
       {
-        title: 'Любовь',
+        title: 'Жёны',
       },
       {
         title: 'Еда',
