@@ -1,12 +1,16 @@
 const React = require('react');
-const Layout = require('../views/Layout');
-const Card = require('../views/Card');
+const Layout = require('./Layout');
+const Card = require('./Card');
 const question = require('../db/models/question');
 
 function Play({ question }) {
   return (
     <Layout>
-      <Card question={question}></Card>
+      <div className="card">
+        <Card question={question} />
+      </div>
     </Layout>
   );
 }
+
+module.exports = Play;
